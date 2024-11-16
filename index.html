@@ -4,10 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Odin landing page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>hello world</h1>
+  <header>
+    <nav>
+      <a class="nav__logo" href="#">The Odin Project</a>
+      <ul class="nav__link-container">
+        <li class="nav__list"><a class="nav__link link" href="#">Header</a></li>
+        <li class="nav__list"><a class="nav__link link" href="#">Features</a></li>
+        <li class="nav__list"><a class="nav__link link" href="#">Start for free</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <div class="hero__text-container">
+        <h1 class="hero__header">The only course you need</h1>
+        <p class="hero__description">
+          The odin project is the best free course for learning web development,
+        </p>
+        <button class="hero__enroll">Enroll</button>
+      </div>
+      <div class="hero__img-container">
+        <img class="hero__img" src="./assets/images/odin.svg" alt="odin logo">
+      </div>
+    </section>
+  </header>
   
 </body>
 </html>
