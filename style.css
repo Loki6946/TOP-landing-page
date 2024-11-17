@@ -30,12 +30,17 @@
   --color-dark-background: hsl(215, 28%, 17%);
   --color-quote-background: hsl(220, 13%, 91%);
   --color-img-background: hsl(216, 29%, 10%);
+  --color-enroll-background: hsl(217, 91%, 59%);
 
   --color-hero-primary-text: hsl(90, 17%, 98%);
   --color-hero-secondary-text: hsl(220, 13%, 91%);
   --color-hero-logo-text: hsl(90, 17%, 98%);
   --color-info-header-text: hsl(215, 28%, 17%);
+  --color-info-paragraph-text: hsl(214, 4%, 31%);
   --color-quote-text: hsl(215, 28%, 17%);
+  --color-enroll-header-text: hsl(90, 17%, 98%);
+  --color-enroll-text: hsl(220, 13%, 91%);
+  --color-footer-text: hsl(220, 13%, 91%);
   --color-link-hover: hsl(90, 17%, 98%);
 
   --color-button: hsl(217, 91%, 59%);
@@ -56,6 +61,7 @@
   --text-xxl: 3rem;
 
   /* spacing */
+  --spacing-xxs: 0.4rem;
   --spacing-xs: 0.6rem;
   --spacing-sm: 0.8rem;
   --spacing-md: 1.12rem;
@@ -179,4 +185,155 @@ nav {
 .hero__img {
   width: 150px;
   height: auto;
+}
+
+.features {
+  padding-block: var(--spacing-xxl);
+  background-color: white;
+}
+
+.features__container {
+  max-width: 1020px;
+  margin-inline: auto;
+  display: grid;
+  place-content: center;
+  gap: var(--spacing-xl);
+}
+
+.features__header {
+  color: var(--color-info-header-text);
+  font-size: var(--text-xl);
+  font-weight: var(--font-bold);
+  text-align: center;
+}
+
+.features__card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+
+.features__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.features__card-image {
+  max-width: 120px;
+  height: auto;
+}
+
+.features__card-description {
+  color: var(--color-info-paragraph-text);
+  font-size: var(--text-md);
+}
+
+.testimonial {
+  padding-block: var(--spacing-xxl);
+  padding-inline: calc(var(--spacing-xxl) + 10rem);
+  background-color: var(--color-quote-background);
+}
+
+.testimonial__container {
+  max-width: 1020px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--spacing-sm);
+}
+
+.testimonial__testimoni-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial__testimoni {
+  color: var(--color-quote-text);
+  font-size: var(--text-xl);
+  font-weight: var(--font-thin);
+  font-style: var(--font-thin-style);
+  line-height: 1.3;
+}
+
+.testimonial__person {
+  color: var(--color-quote-text);
+  font-size: var(--text-lg);
+  font-weight: var(--font-bold);
+  text-align: right;
+}
+
+.enroll {
+  padding-block: var(--spacing-xxl);
+  padding-inline: calc(var(--spacing-xxl) + 4rem);
+  background-color: white;
+}
+
+.enroll__container {
+  max-width: 1020px;
+  margin-inline: auto;
+}
+
+.enroll__banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding-block: var(--spacing-xl);
+  padding-inline: var(--spacing-xxl);
+  border-radius: 8px;
+  background-color: var(--color-enroll-background);
+}
+
+.enroll__header {
+  color: var(--color-enroll-header-text);
+  font-size: var(--text-lg);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--spacing-xxs);
+}
+
+.enroll__description {
+  color: var(--color-enroll-text);
+  font-size: var(--text-md);
+  line-height: 1.3;
+}
+
+.enroll__button {
+  font: inherit;
+  font-size: var(--text-md);
+  font-weight: var(--font-bold);
+  color: var(--color-enroll-header-text);
+  padding-block: var(--spacing-xxs);
+  padding-inline: var(--spacing-lg);
+  border: 2px solid var(--color-enroll-header-text);
+  border-radius: 8px;
+  background-color: transparent;
+  transition: background-color 200ms;
+}
+
+.enroll__button:hover {
+  cursor: pointer;
+  background-color: var(--color-button-hover);
+}
+
+footer {
+  padding: var(--spacing-lg);
+  background-color: var(--color-dark-background);
+}
+
+.footer__container {
+  max-width: 1020px;
+  margin-inline: auto;
+  display: grid;
+  place-content: center;
+}
+
+.footer__text {
+  color: var(--color-footer-text);
+  font-size: var(--text-md);
 }
