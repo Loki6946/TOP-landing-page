@@ -46,6 +46,8 @@
   --color-button: hsl(217, 91%, 59%);
   --color-button-hover: hsl(217, 91%, 50%);
 
+  --color-border: hsl(217, 91%, 59%);
+
   /* typography */
   --font-primary: 'Roboto', sans-serif;
   
@@ -219,7 +221,13 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: var(--spacing-lg);
+  gap: var(--spacing-sm);
+}
+
+.features__card-image-container {
+  padding: var(--spacing-md);
+  border: 3px solid var(--color-border);
+  border-radius: 12px;
 }
 
 .features__card-image {
