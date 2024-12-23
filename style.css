@@ -41,6 +41,7 @@
   --color-enroll-header-text: hsl(90, 17%, 98%);
   --color-enroll-text: hsl(220, 13%, 91%);
   --color-footer-text: hsl(220, 13%, 91%);
+  --color-link-container-hover: hsl(215, 28%, 30%);
   --color-link-hover: hsl(90, 17%, 98%);
 
   --color-button: hsl(217, 91%, 59%);
@@ -87,7 +88,7 @@
 
 body {
   min-height: 100vh;
-  line-height: 1;
+  line-height: 1.5;
   text-rendering: optimizeSpeed;
   font-family: var(--font-primary);
   font-size: var(--text-md);
@@ -129,7 +130,11 @@ nav {
   transition: color 200ms;
 }
 
-.nav__link:hover {
+.nav__link-container:hover .nav__link {
+  color: var(--color-link-container-hover);
+}
+
+.nav__link-container:hover .nav__link:hover {
   color: var(--color-link-hover)
 }
 
@@ -155,7 +160,6 @@ nav {
   color: var(--color-hero-secondary-text);
   font-size: var(--text-md);
   font-weight: var(--font-regular);
-  line-height: 1.3;
   margin-bottom: var(--spacing-md);
 }
 
@@ -242,7 +246,7 @@ nav {
 
 .testimonial {
   padding-block: var(--spacing-xxl);
-  padding-inline: calc(var(--spacing-xxl) + 10rem);
+  padding-inline: calc(var(--spacing-xxl));
   background-color: var(--color-quote-background);
 }
 
@@ -266,7 +270,6 @@ nav {
   font-size: var(--text-xl);
   font-weight: var(--font-thin);
   font-style: var(--font-thin-style);
-  line-height: 1.3;
 }
 
 .testimonial__person {
@@ -278,7 +281,7 @@ nav {
 
 .enroll {
   padding-block: var(--spacing-xxl);
-  padding-inline: calc(var(--spacing-xxl) + 4rem);
+  padding-inline: calc(var(--spacing-xxl));
   background-color: white;
 }
 
